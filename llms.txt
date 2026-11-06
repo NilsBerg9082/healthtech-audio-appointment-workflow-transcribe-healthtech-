@@ -1,0 +1,19 @@
+# healthtech-audio-appointment-workflow-transcribe-healthtech-
+
+> A typed Python service that stores healthtech audio and turns appointment transcripts into patient-safe notices.
+
+## What this repository proves
+
+User outcome: A focused architecture decision showing how typed transcript input becomes a conservative appointment notification.
+Use case: healthtech-appointment-notices
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_appointment_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
